@@ -37,7 +37,7 @@ public class LoginServlet extends HttpServlet {
         String check=request.getParameter("check");
 
 
-        if ("tomas".equals(userName) && "123".equals(password) ) {
+        if ("fnan".equals(userName) && "123".equals(password) ) {
             User userOb=new User(userName,password);
             HttpSession session=request.getSession();
             session.setAttribute("user",userOb);
